@@ -8,6 +8,9 @@
 ## directory and file insruction
 - .vimrc: minimal vimrc 
 - COMMON_OPERATION.md: common operation notes.(jhlk, w, e ...etc)
+[common mode](https://github.com/freedomvictory/vim-editor-tutorial/blob/master/COMMON_OPERATION.md)
+- tab_window_buffer.md: using vim working area(:buffer1,:tabnew,:vsp...etc)
+[vim working area](https://github.com/freedomvictory/vim-editor-tutorial/blob/master/tab_window_buffer.md)
 
 
 ## author message 
