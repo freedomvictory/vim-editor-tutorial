@@ -55,8 +55,9 @@ vim uses tabs to organize the colletion of the windows
 
 #### common operation 
 
-| key           | behavior     
-| ------------- |:---------------------------------------------------------:|
-| `:tabnew`     | open a new tab                                            |
-| `:tabnext`    | jump to a next tab                                        |
-| `:tabprevious`| jump to a previous tab                                    |
+| key               | behavior     
+| -------------     |:---------------------------------------------------------:|
+| `:tabnew`         | open a new tab                                            |
+| `:tabnext`(gt)    | jump to a next tab                                        |
+| `:tabprevious`(gT)| jump to a previous tab                                    |
+| `:tabmove N`      | move current tab to the behind of Tab N                   | 
