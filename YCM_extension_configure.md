@@ -21,6 +21,7 @@ For linux user
     let g:plug_timeout = 300
     Plug 'Valloric/YouCompleteMe', {'do':'./install.py --all' }
     ```
+    If you have not install `vim-plug`, please refer to [`vim-plug`](./install_vim_extension.md)
 
     The above command support all programming language auto complete, if you want to just support one programming language. You can type the floowing words replase `./install.py`
 
