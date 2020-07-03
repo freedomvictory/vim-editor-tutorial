@@ -47,6 +47,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mileszs/ack.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'Valloric/YouCompleteMe', { 'do' : './install.py --clangg-completer --go-completer '}
+Plug 'sjl/gundo.vim'
+Plug 'vim-scripts/ScrollColors'
+Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 
@@ -74,6 +77,7 @@ map <right> <nop>
 
 "set mapleader
 let mapleader = "\<space>"
+ 
 "save file
 noremap <leader>w :w<cr>                         
 "start NERDTree
@@ -97,3 +101,16 @@ set tags=tags; "find tags on root directory and sub directory
 "auto handle      ctags -R command
 autocmd BufWritePost *.c *.cpp *.h *.py *.go silent! !ctags -R &
 
+
+
+"show status bar
+set laststatus=2
+
+"load powerline
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup 
+
+
+"colorschemes
+colorscheme disciple
