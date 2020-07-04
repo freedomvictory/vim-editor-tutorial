@@ -50,6 +50,7 @@ Plug 'Valloric/YouCompleteMe', { 'do' : './install.py --clangg-completer --go-co
 Plug 'sjl/gundo.vim'
 Plug 'vim-scripts/ScrollColors'
 Plug 'flazz/vim-colorschemes'
+Plug 'tpope/vim-unimpaired'
 
 call plug#end()
 
@@ -94,12 +95,6 @@ noremap <c-l> <c-w><c-l>
 
 noremap <leader>] :YcmCompleter GoTo<cr>
 
-"Ctags 
-
-set tags=tags; "find tags on root directory and sub directory 
-
-"auto handle      ctags -R command
-autocmd BufWritePost *.c *.cpp *.h *.py *.go silent! !ctags -R &
 
 
 
@@ -114,3 +109,6 @@ python3 del powerline_setup
 
 "colorschemes
 colorscheme disciple
+
+"shell
+set shell=/bin/zsh
