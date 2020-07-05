@@ -20,6 +20,16 @@ you can type `5j`, it would move your cursor down 5 units,   it is equivalent to
 | b             | previous word(narrow sense) head     |
 | B             | previous word(generalized sense) head|
 
+
+some other keys 
+
+- `ge` : previous word ending 
+- `<c-f>` : page down 
+- `<c-b>` : page up 
+
+
+
+
 you also can try to type `5w`, `5e` ...etc, observed the positon of cursor moving 
 
 | key           | behavior     
@@ -36,7 +46,7 @@ you also can try to type `5w`, `5e` ...etc, observed the positon of cursor movin
 - `dW` : delete the charactors from current cursor to a word(generalized sense) end
 - `dd` : delete one line 
 
-### edit and covert common mode to insert mode `c*`
+### edit and covert common mode to insert mode `c*` or others 
 
 | key           | behavior     
 | ------------- |:--------------------------------------:|
@@ -45,6 +55,19 @@ you also can try to type `5w`, `5e` ...etc, observed the positon of cursor movin
 | cb            | like `db`,   ~~~~~~~~~~~~~~~~          | 
 | c4l           | like `d4l`,  ~~~~~~~~~~~~~~~~          | 
 | cc            | like `dd`,   ~~~~~~~~~~~~~~~~          |
+
+
+- `a` : behind the cursor, into insert mode  
+- `A` : behind this line ending, into ....
+- `I` : before this line head, into .....
+- `o` : crate a new line on the bottom of the cursor , and into .... 
+- `O` : create a new line on the top of the cursor , and into ....
+- `gi`: move the position that exit last , and into ... 
+- `C` : delete the current cursor right words , and into ...
+- `S` : delete the current line , and into ... 
+- `s` : delete the character , and into ...
+
+
 
 ### undo and repeat 
 
