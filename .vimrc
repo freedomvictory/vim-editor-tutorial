@@ -16,7 +16,8 @@ set tabstop=4
 set shiftwidth=4
 set backspace=2
 
-colorscheme delek
+set termguicolors
+
 
 set number "show line number
 
@@ -27,6 +28,8 @@ if !isdirectory("$HOME/.vim/undodir")
     call mkdir ("$HOME/.vim/undodir","p")
 endif
 set undodir=$HOME/.vim/undodir
+
+
 
 
 
@@ -51,6 +54,8 @@ Plug 'sjl/gundo.vim'
 Plug 'vim-scripts/ScrollColors'
 Plug 'flazz/vim-colorschemes'
 Plug 'tpope/vim-unimpaired'
+Plug 'christoomey/vim-tmux-navigator' 
+Plug 'ryanoasis/vim-devicons'          "awesome font
 
 call plug#end()
 
@@ -91,6 +96,11 @@ noremap <c-j> <c-w><c-j>
 noremap <c-k> <c-w><c-k>
 noremap <c-l> <c-w><c-l>
 
+"vim-terminal mode switch window hot key
+tnoremap <c-h> <c-w><c-h>
+tnoremap <c-j> <c-w><c-j>
+tnoremap <c-k> <c-w><c-k>
+tnoremap <c-l> <c-w><c-l>
 "YCM SET
 
 noremap <leader>] :YcmCompleter GoTo<cr>
@@ -107,8 +117,28 @@ python3 powerline_setup()
 python3 del powerline_setup 
 
 
-"colorschemes
-colorscheme disciple
 
 "shell
 set shell=/bin/zsh
+
+"tags
+set tags=tags
+autocmd BufWritePost *.c *.h silent! !ctags -R &
+
+
+"colorscheme
+colorscheme solarized8_light
+
+
+" Enable true color 24 bit color 
+
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
+"vim clipboard set reg
+
+set clipboard=unamed,unamedplus      " copy to reg(*, +)
+
