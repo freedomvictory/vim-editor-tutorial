@@ -16,12 +16,18 @@ This is my study notes about about vim8.  I will keep recording what I have lear
 - `YCM_extension_configure.md:` YouCompleMe extension configure. The link is [vim_ycm](./YCM_extension_configure.md)
 - `unimpaired.md:` Unimpaired provide good key mapping when traverse buffer files, The link is [unimpaired](./unimpaired.md)
 - `EasyMotion.md` Easy motion extension user method , Click it [easyMotion](./EasyMotion.md)
-
+- `terminal.md` how to use vim-terminal, Click it [terminal.md](./terminal.md    )
 
 
 
 ## author contract 
 - *`email:dinggl9367@163.com`*
+
+## install vim8 on centos 
+  
+    Reference Link 
+[**Install vim 8**](https://phoenixnap.com/kb/how-to-install-vim-centos-7)
+
 
 
 
