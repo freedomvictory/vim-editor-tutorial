@@ -18,6 +18,7 @@ This is my study notes about about vim8.  I will keep recording what I have lear
 - `EasyMotion.md` Easy motion extension user method , Click it [easyMotion](./EasyMotion.md)
 - `terminal.md` how to use vim-terminal, Click it [terminal.md](./terminal.md    )
 
+- `vim-sync` SYNC plugin ,Click it [vim-sync.md](./vim_sync.md)
 
 
 ## author contract 

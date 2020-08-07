@@ -56,9 +56,14 @@ Plug 'flazz/vim-colorschemes'
 Plug 'tpope/vim-unimpaired'
 Plug 'christoomey/vim-tmux-navigator' 
 Plug 'ryanoasis/vim-devicons'          "awesome font
+Plug 'tpope/vim-fugitive' " vim-git plugins
+Plug 'fatih/vim-go'
+Plug 'yegappan/taglist'
+Plug 'tmsvg/pear-tree'
+Plug 'eshion/vim-sync'
+Plug 'skywind3000/asyncrun.vim'
 
 call plug#end()
-
 "set wildmenu
 set wildmenu                "tab auto complete
 set wildmode=list:longest,full "complete longest string, then open wildmenu
@@ -120,10 +125,6 @@ python3 del powerline_setup
 
 "shell
 set shell=/bin/zsh
-
-"tags
-set tags=tags
-autocmd BufWritePost *.c *.h silent! !ctags -R &
 
 
 "colorscheme
