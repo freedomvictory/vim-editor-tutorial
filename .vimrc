@@ -57,7 +57,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'christoomey/vim-tmux-navigator' 
 Plug 'ryanoasis/vim-devicons'          "awesome font
 Plug 'tpope/vim-fugitive' " vim-git plugins
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
 Plug 'yegappan/taglist'
 Plug 'tmsvg/pear-tree'
 Plug 'eshion/vim-sync'
@@ -124,7 +124,7 @@ python3 del powerline_setup
 
 
 "shell
-set shell=/bin/zsh
+set shell=/bin/bash
 
 
 "colorscheme
@@ -142,4 +142,13 @@ endif
 "vim clipboard set reg
 
 set clipboard=unamed,unamedplus      " copy to reg(*, +)
+
+
+
+
+
+
+
+
+
 
